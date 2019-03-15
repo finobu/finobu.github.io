@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Agit Project</title>
+    <link href="https://fonts.googleapis.com/css?family=Heebo:400,400i,700|Titillium+Web:600" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://www.jqueryscript.net/demo/jQuery-Plugin-To-Emulate-Terminal-Window-Shell-js/dist/css/shell.min.css"/>
+    <link rel="shortcut icon" href="fav.png">
+    <link rel="stylesheet"
+          href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <style>
+        ::selection {
+            background: #C498CA; /* WebKit/Blink Browsers */
+            color: white;
+        }
+
+        ::-moz-selection {
+            background: #C498CA; /* Gecko Browsers */
+            color: white;
+        }
+    </style>
+    <script>
+        window['_fs_debug'] = false;
+        window['_fs_host'] = 'fullstory.com';
+        window['_fs_org'] = 'JQ1EH';
+        window['_fs_namespace'] = 'FS';
+        (function (m, n, e, t, l, o, g, y) {
+            if (e in m) {
+                if (m.console && m.console.log) {
+                    m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');
+                }
+                return;
+            }
+            g = m[e] = function (a, b, s) {
+                g.q ? g.q.push([a, b, s]) : g._api(a, b, s);
+            };
+            g.q = [];
+            o = n.createElement(t);
+            o.async = 1;
+            o.src = 'https://' + _fs_host + '/s/fs.js';
+            y = n.getElementsByTagName(t)[0];
+            y.parentNode.insertBefore(o, y);
+            g.identify = function (i, v, s) {
+                g(l, {uid: i}, s);
+                if (v) g(l, v, s)
+            };
+            g.setUserVars = function (v, s) {
+                g(l, v, s)
+            };
+            g.event = function (i, v, s) {
+                g('event', {n: i, p: v}, s)
+            };
+            g.shutdown = function () {
+                g("rec", !1)
+            };
+            g.restart = function () {
+                g("rec", !0)
+            };
+            g.consent = function (a) {
+                g("consent", !arguments.length || a)
+            };
+            g.identifyAccount = function (i, v) {
+                o = 'account';
+                v = v || {};
+                v.acctId = i;
+                g(o, v)
+            };
+            g.clearUserCookie = function () {
+            };
+        })(window, document, window['_fs_namespace'], 'script', 'user');
+    </script>
+</head>
+
+<body class="is-boxed">
+<div class="body-wrap boxed-container">
+    <header class="site-header">
+        <div class="hero-disk hero-disk-1 is-moving-object is-translating" data-translating-factor="60">
+            <svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient x1="-1.265%" y1="100%" y2="100%" id="disk-1-a">
+                        <stop stop-color="#040404" stop-opacity="0" offset="0%"/>
+                        <stop stop-color="#3217BB" offset="100%"/>
+                    </linearGradient>
+                </defs>
+                <path d="M846 515c0-165.685 134.315-300 300-300s300 134.315 300 300h-150c0-82.843-67.157-150-150-150s-150 67.157-150 150H846z"
+                      transform="translate(-846 -215)" fill="url(#disk-1-a)" fill-rule="evenodd"/>
+            </svg>
+        </div>
+        <div class="hero-disk hero-disk-2 is-moving-object is-translating" data-translating-factor="20">
+            <svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient x1="0%" y1="100%" y2="100%" id="disk-2-a">
+                        <stop stop-color="#040404" stop-opacity="0" offset="0%"/>
+                        <stop stop-color="#D15680" offset="100%"/>
+                    </linearGradient>
+                </defs>
+                <path d="M1153 63c0 165.685-134.315 300-300 300S553 228.685 553 63h150c0 82.843 67.157 150 150 150s150-67.157 150-150h150z"
+                      transform="translate(-553 -63)" fill="url(#disk-2-a)" fill-rule="evenodd"/>
+            </svg>
+        </div>
+        <div class="hero-sphere hero-sphere-1 is-moving-object is-translating" data-translating-factor="10">
+            <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <radialGradient cx="83.479%" cy="86.284%" fx="83.479%" fy="86.284%" r="128.926%" id="sphere-1-a">
+                        <stop stop-color="#D15680" offset="0%"/>
+                        <stop stop-color="#040404" stop-opacity="0" offset="100%"/>
+                    </radialGradient>
+                </defs>
+                <circle cx="1522" cy="447" r="24" transform="translate(-1498 -423)" fill="url(#sphere-1-a)"
+                        fill-rule="evenodd"/>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="site-header-inner">
+                <div class="brand header-brand">
+                    <h1 class="m-0">
+                        <p style="font-size: 30px">
+                            ♖
+                        </p>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero text-center">
+            <div class="hero-disk hero-disk-3 is-moving-object is-translating" data-translating-factor="90">
+                <svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient x1="100%" y1="100%" x2="-1.265%" y2="100%" id="disk-3-a">
+                            <stop stop-color="#040404" stop-opacity="0" offset="0%"/>
+                            <stop stop-color="#3217BB" offset="100%"/>
+                        </linearGradient>
+                    </defs>
+                    <path d="M153 492c0-165.685 134.315-300 300-300s300 134.315 300 300H603c0-82.843-67.157-150-150-150s-150 67.157-150 150H153z"
+                          transform="translate(-153 -192)" fill="url(#disk-3-a)" fill-rule="evenodd"/>
+                </svg>
+            </div>
+            <div class="hero-disk hero-disk-4 is-moving-object is-translating" data-translating-factor="50">
+                <svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient x1="0%" y1="100%" y2="100%" id="disk-4-a">
+                            <stop stop-color="#040404" stop-opacity="0" offset="0%"/>
+                            <stop stop-color="#D15680" offset="100%"/>
+                        </linearGradient>
+                    </defs>
+                    <path d="M817 687c0 165.685-134.315 300-300 300S217 852.685 217 687h150c0 82.843 67.157 150 150 150s150-67.157 150-150h150z"
+                          transform="translate(-217 -687)" fill="url(#disk-4-a)" fill-rule="evenodd"/>
+                </svg>
+            </div>
+            <div class="hero-sphere hero-sphere-2 is-moving-object is-translating" data-translating-factor="30">
+                <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <radialGradient cx="83.479%" cy="86.284%" fx="83.479%" fy="86.284%" r="128.926%"
+                                        id="sphere-2-a">
+                            <stop stop-color="#3217BB" offset="0%"/>
+                            <stop stop-color="#040404" stop-opacity="0" offset="100%"/>
+                        </radialGradient>
+                    </defs>
+                    <circle cx="251" cy="433" r="16" transform="translate(-235 -417)" fill="url(#sphere-2-a)"
+                            fill-rule="evenodd"/>
+                </svg>
+            </div>
+            <div class="container-sm">
+                <div class="hero-inner">
+                    <h1 class="hero-title mt-0 is-revealing">Agit is a CLI for automating Git™ Processes</h1>
+                    <p class="hero-paragraph is-revealing"></p>
+                    <div class="hero-cta is-revealing">
+                        <a class="button button-primary button-shadow" id="oso" href="install.sh"></a>
+                    </div>
+                    <p class="hero-paragraph is-revealing" style="padding-top: 20px;">or
+                        view <a href="#manual-installation">manual installation</a></p>
+                    <div class="hero-browser" id="ubuntu" style="height:350px">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="features section ">
+            <div class="container-sm">
+                <div class="cta-inner section-inner">
+                    <div class="cta-content" id="manual-installation">
+                        <h2 class="section-title mt-0  text-center">Manual Installation</h2>
+                        <h4 class="section-title mt-0  "> Linux</h4>
+                        <pre><code class="plain-text">git clone https://github.com/nicodemus-opon/agit.git ~/agit
+cd ~/agit && chmod +x agit.py
+echo "alias agit='python3 ~/agit/agit.py'" >> ~/.bash_aliases
+source ~/.bash_aliases</code></pre>
+
+                        <h4 class="section-title mt-0  "> Mac os</h4>
+                        <pre><code class="plain-text">git clone https://github.com/nicodemus-opon/agit.git ~/agit
+cd ~/agit && chmod +x agit.py
+echo "alias agit='python3 ~/agit/agit.py'" >> ~/.bash_aliases
+source ~/.bash_aliases</code></pre>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="features section text-center">
+            <div class="container-sm">
+                <div class="features-inner section-inner has-bottom-divider">
+                    <div class="features-wrap">
+                        <div class="feature">
+                            <div class="feature-inner">
+                                <div class="feature-icon">
+                                    <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                            <linearGradient x1="16.65%" y1="87.231%" x2="90.35%" y2="8.197%"
+                                                            id="feature-1-a">
+                                                <stop stop-color="#3217BB" offset="0%"/>
+                                                <stop stop-color="#D15680" offset="100%"/>
+                                            </linearGradient>
+                                            <linearGradient x1="100%" y1="100%" x2="0%" y2="0%" id="feature-1-b">
+                                                <stop stop-color="#FFF" stop-opacity=".48" offset="0%"/>
+                                                <stop stop-color="#FFF" stop-opacity=".24" offset="100%"/>
+                                            </linearGradient>
+                                        </defs>
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path fill="url(#feature-1-a)" d="M64 32v32H32V32H0V0h32v32z"/>
+                                            <path fill="url(#feature-1-b)" d="M16 16h32v32H16z"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <h3 class="feature-title mt-24">Initialize faster</h3>
+                                <p class="text-sm"> agit init </p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-inner">
+                                <div class="feature-icon">
+                                    <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                            <linearGradient x1="16.65%" y1="87.231%" x2="90.35%" y2="8.197%"
+                                                            id="feature-2-a">
+                                                <stop stop-color="#3217BB" offset="0%"/>
+                                                <stop stop-color="#D15680" offset="100%"/>
+                                            </linearGradient>
+                                            <linearGradient x1="100%" y1="100%" x2="0%" y2="0%" id="feature-2-b">
+                                                <stop stop-color="#FFF" stop-opacity=".48" offset="0%"/>
+                                                <stop stop-color="#FFF" stop-opacity=".24" offset="100%"/>
+                                            </linearGradient>
+                                        </defs>
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M32 64C14.327 64 0 49.673 0 32 0 14.327 14.327 0 32 0c17.673 0 32 14.327 32 32 0 17.673-14.327 32-32 32zm0-16c8.837 0 16-7.163 16-16s-7.163-16-16-16-16 7.163-16 16 7.163 16 16 16z"
+                                                  fill="url(#feature-2-a)"/>
+                                            <path fill="url(#feature-2-b)" d="M0 0h32v32H0z"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <h3 class="feature-title mt-24">commit faster</h3>
+                                <p class="text-sm">agit commit</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="features-wrap">
+                        <div class="feature">
+                            <div class="feature-inner">
+                                <div class="feature-icon">
+                                    <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                            <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="feature-3-a">
+                                                <stop stop-color="#3217BB" offset="0%"/>
+                                                <stop stop-color="#D15680" offset="100%"/>
+                                            </linearGradient>
+                                        </defs>
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M0 32h32V0c17.673 0 32 14.327 32 32 0 17.673-14.327 32-32 32C14.327 64 0 49.673 0 32z"
+                                                  fill="url(#feature-3-a)"/>
+                                            <path fill-opacity=".32" fill="#FFF" d="M32 32h32v32H32z"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <h3 class="feature-title mt-24">realtime commit</h3>
+                                <p class="text-sm">agit serve</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-inner">
+                                <div class="feature-icon">
+                                    <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                            <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="feature-4-a">
+                                                <stop stop-color="#3217BB" offset="0%"/>
+                                                <stop stop-color="#D15680" offset="100%"/>
+                                            </linearGradient>
+                                        </defs>
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M64 32H32V0c17.673 0 32 14.327 32 32z" fill="url(#feature-4-a)"/>
+                                            <path d="M32 64H0V32c17.673 0 32 14.327 32 32z" fill="url(#feature-4-a)"
+                                                  transform="rotate(180 16 48)"/>
+                                            <path fill-opacity=".32" fill="#FFF" d="M16 16h32v32H16z"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <h3 class="feature-title mt-24">Collab better</h3>
+                                <p class="text-sm">agit collab</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta section">
+            <div class="container-sm">
+                <div class="cta-inner section-inner">
+                    <div class="cta-content text-center">
+                        <h2 class="section-title mt-0"> Support Agit</h2>
+                        <p class="section-paragraph">😃 feel free to support the development of agit.</p>
+                        <div class="section-cta">
+
+                            <a class="button button-primary button-shadow" target="_blank"
+                               href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HS7AW7SYEKEYC&source=url">
+                                <i class="fa fa-heart" style="padding-right: 10px;color: deeppink"></i> Donate
+                                to Agit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-disk footer-disk-1 is-moving-object is-translating" data-translating-factor="60">
+            <svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient x1="100%" y1="100%" x2="-1.265%" y2="100%" id="disk-5-a">
+                        <stop stop-color="#040404" stop-opacity="0" offset="0%"/>
+                        <stop stop-color="#3217BB" offset="100%"/>
+                    </linearGradient>
+                </defs>
+                <path d="M153 492c0-165.685 134.315-300 300-300s300 134.315 300 300H603c0-82.843-67.157-150-150-150s-150 67.157-150 150H153z"
+                      transform="translate(-153 -192)" fill="url(#disk-5-a)" fill-rule="evenodd"/>
+            </svg>
+        </div>
+        <div class="footer-disk footer-disk-2 is-moving-object is-translating" data-translating-factor="80">
+            <svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient x1="0%" y1="100%" y2="100%" id="disk-6-a">
+                        <stop stop-color="#040404" stop-opacity="0" offset="0%"/>
+                        <stop stop-color="#D15680" offset="100%"/>
+                    </linearGradient>
+                </defs>
+                <path d="M1153 63c0 165.685-134.315 300-300 300S553 228.685 553 63h150c0 82.843 67.157 150 150 150s150-67.157 150-150h150z"
+                      transform="translate(-553 -63)" fill="url(#disk-6-a)" fill-rule="evenodd"/>
+            </svg>
+        </div>
+        <div class="footer-sphere footer-sphere-1 is-moving-object is-translating" data-translating-factor="20">
+            <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <radialGradient cx="83.479%" cy="86.284%" fx="83.479%" fy="86.284%" r="128.926%" id="sphere-3-a">
+                        <stop stop-color="#D15680" offset="0%"/>
+                        <stop stop-color="#040404" stop-opacity="0" offset="100%"/>
+                    </radialGradient>
+                </defs>
+                <circle cx="251" cy="433" r="16" transform="translate(-235 -417)" fill="url(#sphere-3-a)"
+                        fill-rule="evenodd"/>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="site-footer-inner has-top-divider">
+                <div class="brand footer-brand">
+                    <a href="#">
+
+                    </a>
+                </div>
+                <ul class="footer-links list-reset">
+                    <a href="https://www.producthunt.com/posts/autogit?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-autogit"
+                       target="_blank"><img
+                            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=148219&theme=light"
+                            alt="Autogit - Open-source CLI for automating Git™ Processes | Product Hunt Embed"
+                            style="width: 250px; height: 54px;" width="250px" height="54px"/></a>
+                </ul>
+                <ul class="footer-social-links list-reset">
+                    <li>
+                        <a href="https://www.facebook.com/finobu/">
+                            <span class="screen-reader-text">Facebook</span>
+                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.023 16L6 9H3V6h3V4c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V6H13l-1 3H9.28v7H6.023z"
+                                      fill="#FFFFFF"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/finobutools">
+                            <span class="screen-reader-text">Twitter</span>
+                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 3c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4C.7 7.7 1.8 9 3.3 9.3c-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H0c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4C15 4.3 15.6 3.7 16 3z"
+                                      fill="#FFFFFF"/>
+                            </svg>
+                        </a>
+                    </li>
+
+                </ul>
+                <div class="footer-copyright">&copy; 2019 Agit, all rights reserved</div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="dist/js/main.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js"></script>
+
+<script src="https://www.jqueryscript.net/demo/jQuery-Plugin-To-Emulate-Terminal-Window-Shell-js/dist/js/jquery.shell.min.js"></script>
+<script src="https://www.jqueryscript.net/demo/jQuery-Plugin-To-Emulate-Terminal-Window-Shell-js/dist/js/shell.min.js"></script>
+<script>
+    // Can also be included with a regular script tag
+
+
+    $('#ubuntu').shell({
+// The user of the shell
+        user: "agit",
+// The host of the shell
+        host: "host",
+        typed: Typed,
+// The current path
+        path: "~",
+
+// The style (custom, ubuntu, osx, windows)
+        style: "custom",
+
+// The theme (dark, light)
+        theme: "dark",
+
+// If is responsive
+        responsive: false,
+
+// Display the shadow
+        shadow: true,
+
+// The commands list
+        commands: ["agit init https://github.com/username/reponame.git #initialize remote repo", "agit commit # commmit and push changes", "agit serve # realtime commmit and push changes"]
+    });
+
+</script>
+<script>
+    function getOS() {
+        var userAgent = window.navigator.userAgent,
+            platform = window.navigator.platform,
+            macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+            windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
+            iosPlatforms = ['iPhone', 'iPad', 'iPod'],
+            os = null;
+
+        if (macosPlatforms.indexOf(platform) !== -1) {
+            os = 'Mac OS';
+        } else if (iosPlatforms.indexOf(platform) !== -1) {
+            os = 'iOS';
+        } else if (windowsPlatforms.indexOf(platform) !== -1) {
+            os = 'Windows';
+        } else if (/Android/.test(userAgent)) {
+            os = 'Android';
+        } else if (!os && /Linux/.test(platform)) {
+            os = 'Linux';
+        }
+
+        return os;
+    }
+
+    var clie = getOS();
+    console.log();
+    if (clie == "Windows") {
+        $('#oso').html('<i style="padding-right:10px"class="fa fa-apple"></i> Get Agit for ' + clie + "");
+    } else if (clie == "Linux") {
+        $('#oso').html('<i style="padding-right:10px"class="fa fa-linux"></i> Get Agit for ' + clie + "");
+    } else {
+        $('#oso').html('<i style="padding-right:10px"class="fa fa-apple"></i> Get Agit for ' + clie + "");
+    }
+
+
+</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-5513559808632473",
+        enable_page_level_ads: true
+    });
+</script>
+</body>
+
+</html>
